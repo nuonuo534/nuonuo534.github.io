@@ -17,7 +17,7 @@ import {lazyLoadImage} from "./src/plugins/lazy-load-image.js";
 
 
 export default defineConfig({
-  // base: '/record',
+  base: './',
   site: 'https://astro-yi-nu.vercel.app',
   integrations: [sitemap(), tailwind(), solid(), expressiveCode({
     plugins: [pluginLineNumbers(), pluginCollapsibleSections()],
