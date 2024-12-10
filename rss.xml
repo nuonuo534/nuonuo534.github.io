@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?><rss version="2.0"><channel><title>Astro Theme Yi</title><description>Welcome to my independent blog website! </description><link>https://nuonuo534.github.io/record/</link><item><title>lerna学习</title><link>https://nuonuo534.github.io/blog/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/lerna/</link><guid isPermaLink="true">https://nuonuo534.github.io/blog/%E5%89%8D%E7%AB%AF%E5%B7%A5%E7%A8%8B%E5%8C%96/lerna/</guid><description> 常用命令
+ lerna init
+初始化一个lerna项目
+固定模式（默认）：lerna init
+独立模式：lerna init ----independent
+ lerna bootstrap
+安装所有packages的依赖项并且连接本地包的交叉依赖项...</description><pubDate>Tue, 19 Mar 2024 00:00:00 GMT</pubDate></item><item><title>常用命令</title><link>https://nuonuo534.github.io/blog/docker/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</link><guid isPermaLink="true">https://nuonuo534.github.io/blog/docker/%E5%B8%B8%E7%94%A8%E5%91%BD%E4%BB%A4/</guid><description>1、清除悬空镜像
+```go
+docker rmi $(docker images -f &quot;dangling=true&quot; -q)
+// 等价于
+-a Remove all unused images, not just dangling ones
+-f 不提示确认
+docker ...</description><pubDate>Tue, 19 Mar 2024 00:00:00 GMT</pubDate></item><item><title>h5错误</title><link>https://nuonuo534.github.io/blog/%E8%B8%A9%E5%9D%91/h5/</link><guid isPermaLink="true">https://nuonuo534.github.io/blog/%E8%B8%A9%E5%9D%91/h5/</guid><description> 移动端H5页面拍照上传图片后图片被旋转的bug及修复方案
+某些浏览器有一个自动纠正图片旋转的功能,手机上拍照是正常的，一上传到又拍云上就发生了旋转。先用exif.js中的Orientation判断出图片的拍摄方向，如果发生了旋转，我们用canvas绘画图片并加以修正，最...</description><pubDate>Tue, 19 Mar 2024 00:00:00 GMT</pubDate></item><item><title>git补充知识</title><link>https://nuonuo534.github.io/blog/%E5%9F%BA%E7%A1%80/git/</link><guid isPermaLink="true">https://nuonuo534.github.io/blog/%E5%9F%BA%E7%A1%80/git/</guid><description>* 配置 Git 使其对文件名大小写敏感
+```sh
+git config core.ignorecase false
+```
+* 获取某一个commit
+```sh
+git cherry-pick commit
+```...</description><pubDate>Tue, 19 Mar 2024 00:00:00 GMT</pubDate></item><item><title>错误处理</title><link>https://nuonuo534.github.io/blog/%E8%B8%A9%E5%9D%91/error/</link><guid isPermaLink="true">https://nuonuo534.github.io/blog/%E8%B8%A9%E5%9D%91/error/</guid><description>```javascript
+// 引用第三方库，需要用到浏览器功能的可以写成组件后用异步导入
+import dynamic from &apos;next/dynamic&apos;;
+  const MyComponent = dynamic(() =&gt; import(&apos;./login&apos;), {
+...</description><pubDate>Tue, 19 Mar 2024 00:00:00 GMT</pubDate></item><item><title>移动端适配方案</title><link>https://nuonuo534.github.io/blog/css/%E9%80%82%E9%85%8D/</link><guid isPermaLink="true">https://nuonuo534.github.io/blog/css/%E9%80%82%E9%85%8D/</guid><description> 移动端适配方案
+```
+npm install postcss-px-to-viewport --save-dev
+```
+
+```js
+//postcss.config.js
+
+// postcss.config.js
+const path = require(&apos;pat...</description><pubDate>Tue, 19 Mar 2024 00:00:00 GMT</pubDate></item><item><title>脚本</title><link>https://nuonuo534.github.io/blog/script/sh/</link><guid isPermaLink="true">https://nuonuo534.github.io/blog/script/sh/</guid><description> 基本语法
+* !告诉系统这个脚本需要什么解释器来执行
+* Shell 变量分为系统变量和自定义变量。系统变量有$HOME、$PWD、$USER等，显示当前 Shell 中所有变量：set
+* 定义变量：变量名=变量值，等号两侧不能有空格，变量名一般习惯用大写。
+* 删除...</description><pubDate>Tue, 19 Mar 2024 00:00:00 GMT</pubDate></item><item><title>设计模式</title><link>https://nuonuo534.github.io/blog/web/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</link><guid isPermaLink="true">https://nuonuo534.github.io/blog/web/%E8%AE%BE%E8%AE%A1%E6%A8%A1%E5%BC%8F/</guid><description> 责任链模式
+避免请求者和接收者之间的耦合，让多个接收者都有机会去处理请求。将接收者组成链条，在链条中传递请求直到有接收者可以处理它。
+原始的定义中，当请求被处理后链条就终止了，但很多地方也会将请求一直传递下去，可以看作是责任链模式的变体。
+ 时序图
+：sender ...</description><pubDate>Tue, 19 Mar 2024 00:00:00 GMT</pubDate></item></channel></rss>
